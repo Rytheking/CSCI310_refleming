@@ -9,14 +9,25 @@ package com.mycompany.hello_world;
  *
  * @author ryanfleming
  */
+
 public class App {
+    private String greeting = "Hello";
+    public String getGreeting(){
+        return greeting;
+    }
+    public void setGreeting(String greeting){
+        this.greeting = greeting;
+    }
     public static void main(String[] args) throws Exception {
+        
+        
         /*contructing an app*/
         App app = new App();
         app.run();
     }
 
     private void run() {
-        System.out.println("Hello Boy, you're looking dapper today");
+        String who = "World";
+        System.out.println("Hello " + who + "!");
     }
 }
