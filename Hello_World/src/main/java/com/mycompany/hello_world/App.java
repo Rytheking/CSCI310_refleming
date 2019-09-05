@@ -5,29 +5,38 @@
  */
 package com.mycompany.hello_world;
 
+
 /**
  *
  * @author ryanfleming
  */
 
 public class App {
-    private String greeting = "Hello";
-    public String getGreeting(){
-        return greeting;
+    void run() {}
+    
+    private String language = "en";
+    
+    public String setLanguage(String language){
+        if(language.equals("en")||language.equals("cn")){
+            this.language = language;
+        }
+        throw new UnsupportedOperationException("Not Supported yet");
     }
-    public void setGreeting(String greeting){
-        this.greeting = greeting;
+    
+    public String getMessage(){
+        switch(language){
+            case "en": return "Hello World!";
+            case "cn": return "你好，世界";
+            
+        }
+        throw new IllegalStateException("Not Supported yet");
     }
+ 
     public static void main(String[] args) throws Exception {
-        
-        
         /*contructing an app*/
         App app = new App();
         app.run();
     }
 
-    private void run() {
-        String who = "World";
-        System.out.println("Hello " + who + "!");
-    }
+  
 }
