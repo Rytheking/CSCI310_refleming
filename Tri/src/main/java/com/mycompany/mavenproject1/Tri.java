@@ -19,6 +19,12 @@ public class Tri {
         int b = 3;
         int c = 8;
         algorithm(a,b,c);
+        
+        a= 5;
+        b=15;
+        c=3;
+        algorithm(a,b,c);
+        
     }
     
     public static void algorithm(int a,int b,int c)
@@ -34,75 +40,41 @@ public class Tri {
         if(a+b==c){
             System.out.println( a + " + " + b + " = " + c);
         }
-        else if(a+c==b){
-            System.out.println(a + " + " + c + " = " + b);
-        }
-        else if(c+b==a){
-           System.out.println( c + " + " + b + " = " + a);
+        else if(a==b+c){
+            System.out.println(a + " = " + b + " + " + c);
         }
         
     }
     
-    public static String testSubtraction(int a,int b,int c)
+    public static void testSubtraction(int a,int b,int c)
     {
         if(a-b==c){
-            return a + " - " + b + " = " + c;
+            System.out.println( a + " - " + b + " = " + c);
         }
-        if(a-c==b){
-            return a + " - " + c + " = " + b;
+        if(a==b-c){
+            System.out.println( a + " = " + b + " - " + c);
         }
-        if(b-a==c){
-            return b + " - " + a + " = " + c;
-        }
-        if(b-c==a){
-            return b + " - " + c + " = " + a;
-        }
-        if(c-a==b){
-            return c + " - " + a + " = " + b;
-        }
-        if(c-b==a){
-            return c + " - " + b + " = " + a;
-        }
-        return "yellow";
     }
     
-    public static String testMultiplication(int a,int b,int c)
+    public static void testMultiplication(int a,int b,int c)
     {
         if(a*b==c){
-            
+            System.out.println( a + " * " + b + " = " + c);
         }
-        if(a*c==b){
-            
+        if(a==b*c){
+            System.out.println( a + " = " + b + " * " + c);
         }
-        if(c*b==a){
-            
-        }
-        
-        return "yellow";
     }
     
-    public static String testDivision(int a,int b,int c)
+    public static void testDivision(int a,int b,int c)
     {
         if(a/b==c){
-            
+            System.out.println( a + " / " + b + " = " + c);
         }
-        if(a/c==b){
-            
-        }
-        if(b/a==c){
-            
-        }
-        if(b/c==a){
-            
-        }
-        if(c/a==b){
-            
-        }
-        if(c/b==a){
-            
+        if(a==b/c){
+            System.out.println( a + " = " + b + " / " + c);
         }
         
-        return "yellow";
     }
     
 }
