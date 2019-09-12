@@ -16,11 +16,14 @@ public class App {
     
     private String language = "en";
     
-    public String setLanguage(String language){
+    void setLanguage(String language){
         if(language.equals("en")||language.equals("cn")){
             this.language = language;
         }
-        throw new UnsupportedOperationException("Not Supported yet");
+        else{
+            throw new UnsupportedOperationException("Not Supported yet");
+        }
+        
     }
     
     public String getMessage(){
