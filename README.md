@@ -7,7 +7,7 @@ Sample github repo demonstrating how to turn in assignments to Dr. MacEvoy ( [CM
 | **Course** | Advanced Programming java - 44393 - CSCI 310 - 001 - Fall 2019 |
 | **Student** | Ryan Fleming |
 | **Mav User**            | refleming |
-| **Github User**         | gituser123 |
+| **Github User**         | Rytheking |
 | **Repository**          | https://github.com/Rytheking/CSCI310_refleming |
 | **Syllabus**            | https://docs.google.com/document/d/1wh9IBGTZq71OPv8XJxg3MWuiCeUgdY-DmaK4opk8Djw/edit |
 
@@ -15,8 +15,7 @@ Sample github repo demonstrating how to turn in assignments to Dr. MacEvoy ( [CM
 
 | Assignment | Due Date | Done | Location | Notes |
 |-----------:|:--------:|:----:|:---------|:------|
-
-| 4 - Kattis | 19-Sept-19 |  ☑   |  https://github.com/Rytheking/CSCI310_refleming/tree/master/Tri | Wrote Solution to [tri](https://open.kattis.com/problems/tri) |
+| 1 - Kattis | 19-Sept-19 |  ☑   |  https://github.com/Rytheking/CSCI310_refleming/tree/master/Tri | Wrote Solution to [tri](https://open.kattis.com/problems/tri) |
 
 ## References
 
