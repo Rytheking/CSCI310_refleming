@@ -55,14 +55,76 @@ public class TriTest {
     @Test
     public void testAlgorithm() {
         System.out.println("algorithm");
-        int a = 1;
-        int b = 2;
-        int c = 3;
+        int a = 0;
+        int b = 0;
+        int c = 0;
         Tri.algorithm(a, b, c);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
-    
+    /**
+     * Test of testAddition method, of class Tri.
+     */
+    @Test
+    public void testTestAddition() {
+        System.out.println("testAddition");
+        int a = 5;
+        int b = 4;
+        int c = 9;
+        int expResult = 0;
+        int result = Tri.testAddition(a, b, c);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of testSubtraction method, of class Tri.
+     */
+    @Test
+    public void testTestSubtraction() {
+        System.out.println("testSubtraction");
+        int a = 0;
+        int b = 0;
+        int c = 0;
+        int expResult = 0;
+        int result = Tri.testSubtraction(a, b, c);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of testMultiplication method, of class Tri.
+     */
+    @Test
+    public void testTestMultiplication() {
+        System.out.println("testMultiplication");
+        int a = 0;
+        int b = 0;
+        int c = 0;
+        int expResult = 0;
+        int result = Tri.testMultiplication(a, b, c);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of testDivision method, of class Tri.
+     */
+    @Test
+    public void testTestDivision() {
+        System.out.println("testDivision");
+        int a = 0;
+        int b = 0;
+        int c = 0;
+        int expResult = 0;
+        int result = Tri.testDivision(a, b, c);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
     
 }
