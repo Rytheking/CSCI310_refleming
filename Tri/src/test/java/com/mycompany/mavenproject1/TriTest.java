@@ -55,9 +55,9 @@ public class TriTest {
     @Test
     public void testAlgorithm() {
         System.out.println("algorithm");
-        int a = 0;
-        int b = 0;
-        int c = 0;
+        int a = 4;
+        int b = 5;
+        int c = 9;
         Tri.algorithm(a, b, c);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -72,7 +72,7 @@ public class TriTest {
         int a = 5;
         int b = 4;
         int c = 9;
-        int expResult = 0;
+        String expResult = "5+4=9";
         int result = Tri.testAddition(a, b, c);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -85,10 +85,10 @@ public class TriTest {
     @Test
     public void testTestSubtraction() {
         System.out.println("testSubtraction");
-        int a = 0;
-        int b = 0;
-        int c = 0;
-        int expResult = 0;
+        int a = 5;
+        int b = 9;
+        int c = 4;
+        String expResult = "5=9-4";
         int result = Tri.testSubtraction(a, b, c);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -101,10 +101,10 @@ public class TriTest {
     @Test
     public void testTestMultiplication() {
         System.out.println("testMultiplication");
-        int a = 0;
-        int b = 0;
-        int c = 0;
-        int expResult = 0;
+        int a = 3;
+        int b = 3;
+        int c = 1;
+        String expResult = "3=3*1";
         int result = Tri.testMultiplication(a, b, c);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -117,10 +117,10 @@ public class TriTest {
     @Test
     public void testTestDivision() {
         System.out.println("testDivision");
-        int a = 0;
-        int b = 0;
-        int c = 0;
-        int expResult = 0;
+        int a = 5;
+        int b = 25;
+        int c = 5;
+        String expResult = "5=25/5";
         int result = Tri.testDivision(a, b, c);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
