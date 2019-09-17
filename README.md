@@ -1,10 +1,9 @@
 # CSCI_310-Refleming
 
-Sample github repo demonstrating how to turn in assignments to Dr. MacEvoy ( [CMU](https://org.coloradomesa.edu/~wmacevoy) | [github](https://github.com/wmacevoy) )
 
 | Name | Value|
 |---:|:---|
-| **Course** | Advanced Programming java - 44393 - CSCI 310 - 001 - Fall 2019 |
+| **Course** | Advanced Programming Java - 24569 - CSCI 310 - 001 - Fall 2019 |
 | **Student** | Ryan Fleming |
 | **Mav User**            | refleming |
 | **Github User**         | Rytheking |
