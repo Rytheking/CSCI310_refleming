@@ -46,7 +46,7 @@ public class TriTest {
         String[] args = null;
         Tri.main(args);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
 
     /**
@@ -60,7 +60,7 @@ public class TriTest {
         int c = 9;
         Tri.algorithm(a, b, c);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
 
     /**
@@ -76,7 +76,7 @@ public class TriTest {
         int result = Tri.testAddition(a, b, c);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
 
     /**
@@ -108,7 +108,7 @@ public class TriTest {
         int result = Tri.testMultiplication(a, b, c);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+ 
     }
 
     /**
@@ -124,7 +124,7 @@ public class TriTest {
         int result = Tri.testDivision(a, b, c);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }
