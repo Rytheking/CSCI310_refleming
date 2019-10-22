@@ -15,6 +15,8 @@
 | Assignment | Due Date | Done | Location | Notes |
 |-----------:|:--------:|:----:|:---------|:------|
 | 1 - Kattis | 19-Sept-19 |  ☑   |  https://github.com/Rytheking/CSCI310_refleming/tree/master/Tri | Wrote Solution to [tri](https://open.kattis.com/problems/tri) |
+| 2 - Collections | 17-Oct-19 |  ☑   |  https://github.com/Rytheking/CSCI310_refleming/tree/master/map_proj | used a collection to make a basic contact book |
+| 3 - Threads | 24-Oct-19 |  ☑   |  https://github.com/Rytheking/CSCI310_refleming/tree/master/threading_proj | used threading to run two different for loops at once |
 
 ## References
 
