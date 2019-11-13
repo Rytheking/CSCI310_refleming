@@ -1,27 +1,19 @@
 package com.example.tip_calc;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.view.View;
-import android.widget.TextView;
+import android.widget.SeekBar;
 import android.widget.EditText;
 import android.widget.Button;
-import android.widget.SeekBar;
 import android.widget.Toast;
-
-
-
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
-
-
 
     private static SeekBar seek_bar;
     EditText tip_amount;
     EditText bill_total;
     EditText custom_percent;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public double calc(double bill, double grat){
-        return bill*grat;
+
+
+        return (bill*grat);
     }
 
     public void doStuff(){
@@ -42,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         Button tenpercent=findViewById(R.id.ten_percent);
         Button fifteenpercent=findViewById(R.id.fifteen_percent);
         Button twentypercent=findViewById(R.id.twenty_percent);
-        Button calculate=findViewById(R.id.calculate);
+
 
         seek_bar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
 
@@ -50,7 +44,10 @@ public class MainActivity extends AppCompatActivity {
             public void onProgressChanged(SeekBar seekBar, int progress,
                                           boolean fromUser) {
                 // TODO Auto-generated method stub
-                custom_percent.setText(String.valueOf(progress)+"%");
+
+                custom_percent.setText(String.valueOf(progress));
+
+
             }
 
             @Override
@@ -61,55 +58,57 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
                 // TODO Auto-generated method stub
+                if (!bill_total.getText().toString().equals("") && !custom_percent.getText().toString().equals("")) {
+                    tip_amount.setText("Tip Amount: $" + calc(Double.parseDouble(bill_total.getText().toString()), (Double.parseDouble(custom_percent.getText().toString()) / 100)));
+                } else {
+                    if (custom_percent.getText().toString().equals("")&&!bill_total.getText().toString().equals("")) {
+                        Toast toast = Toast.makeText(getApplicationContext(), "Gratuity can't be 0%!", Toast.LENGTH_SHORT);
+                        toast.show();
+                    } else if(bill_total.getText().toString().equals("")){
+
+                        Toast toast = Toast.makeText(getApplicationContext(), "Total is 0!", Toast.LENGTH_SHORT);
+                        toast.show();
+                    }
+                }
             }
         });
 
-        tenpercent.setOnClickListener(new View.OnClickListener(){
+
+        tenpercent.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(), bill_total.getText().toString(), Toast.LENGTH_SHORT);
-                toast.show();
-                /*if(bill_total.getText())
+                if (!bill_total.getText().toString().equals("")) {
                     tip_amount.setText("Tip Amount: $" + calc(Double.parseDouble(bill_total.getText().toString()), .1));
-                }
-                else{
-                    Toast toast = Toast.makeText(getApplicationContext(), "total is 0!", Toast.LENGTH_SHORT);
+                } else {
+                    Toast toast = Toast.makeText(getApplicationContext(), "Total is 0!", Toast.LENGTH_SHORT);
                     toast.show();
-                }*/
+                }
             }
         });
+
+
         fifteenpercent.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-                if(Double.parseDouble(bill_total.getText().toString())!=0) {
+                if(!bill_total.getText().toString().equals("")) {
                     tip_amount.setText("Tip Amount: $" + calc(Double.parseDouble(bill_total.getText().toString()), .15));
                 }
                 else{
-                    Toast toast = Toast.makeText(getApplicationContext(), "total is 0!", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(getApplicationContext(), "Total is 0!", Toast.LENGTH_SHORT);
                     toast.show();
                 }
             }
         });
         twentypercent.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-                if(Double.parseDouble(bill_total.getText().toString())!=0) {
+                if(!bill_total.getText().toString().equals("")) {
                     tip_amount.setText("Tip Amount: $" + calc(Double.parseDouble(bill_total.getText().toString()), .2));
                 }
                 else{
-                    Toast toast = Toast.makeText(getApplicationContext(), "total is 0!", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(getApplicationContext(), "Total is 0!", Toast.LENGTH_SHORT);
                     toast.show();
                 }
             }
         });
-        calculate.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v) {
-                if(Double.parseDouble(bill_total.getText().toString())!=0) {
-                    tip_amount.setText("Tip Amount: $" + calc(Double.parseDouble(bill_total.getText().toString()), (Double.parseDouble(custom_percent.getText().toString())/100)));
-                }
-                else{
-                    Toast toast = Toast.makeText(getApplicationContext(), "total is 0!", Toast.LENGTH_SHORT);
-                    toast.show();
-                }
-            }
-        });
+
 
 
 
