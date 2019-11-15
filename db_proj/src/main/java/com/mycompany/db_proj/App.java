@@ -5,17 +5,32 @@
  */
 package com.mycompany.db_proj;
 
+import java.sql.*;
+import java.util.Scanner;
+import java.util.regex.*;
+
 /**
  *
- * @author ryanfleming
+ * @author Ryan Fleming
  */
-public class App {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class App{
+    private static String url = "jdbc:sqlite:/Users/ryanfleming/Wendy's.db"; 
+    
+    
+    private Connection connect() {
+        
+        Connection cnct = null;
+            try {
+                cnct = DriverManager.getConnection(url);
+            } catch (SQLException e) {
+                System.out.println(e.getMessage());
+            }
+        return cnct;
     }
     
+    
+
+    void run() {
+        connect();
+    }
 }
