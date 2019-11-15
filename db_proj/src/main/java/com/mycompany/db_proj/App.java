@@ -6,6 +6,7 @@
 package com.mycompany.db_proj;
 
 import java.sql.*;
+import java.sql.DriverManager;
 
 
 /**
@@ -13,8 +14,8 @@ import java.sql.*;
  * @author Ryan Fleming
  */
 public class App{
-    private static String url = "jdbc:sqlite:/Users/ryanfleming/illicit_substances.db"; 
     
+    private static final String url = "jdbc:sqlite:/Users/ryanfleming/illicit_substances.db"; 
     
     private Connection connect() {
         
@@ -28,22 +29,21 @@ public class App{
     }
     
     public static void createDatabase() {
- 
+  
         try (Connection cnct = DriverManager.getConnection(url)) {
             if (cnct != null) {
                 DatabaseMetaData meta = cnct.getMetaData();
                 System.out.println("The driver name is " + meta.getDriverName());
                 System.out.println("A new database has been created.");
             }
- 
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
     }
+    
     public static void createNewTable() {
         // SQLite connection string
-        
-        
+   
         // SQL statement for creating a new table
         String sql = "CREATE TABLE IF NOT EXISTS substances (\n"
                 + "    id integer PRIMARY KEY,\n"
@@ -61,12 +61,12 @@ public class App{
     }
     
     public void insert(String substance, int schedule) {
-        String sql = "INSERT INTO illict_substances(name,capacity) VALUES(?,?)";
+        String sql = "INSERT INTO substances(substance,schedule) VALUES(?,?)";
  
         try (Connection conn = this.connect();
                 PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setString(1, substance);
-            pstmt.setDouble(2, schedule);
+            pstmt.setInt(2, schedule);
             pstmt.executeUpdate();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
@@ -83,7 +83,7 @@ public class App{
  
             // set the corresponding param
             pstmt.setString(1, substance);
-            pstmt.setDouble(2, schedule);
+            pstmt.setInt(2, schedule);
             pstmt.setInt(3, id);
             // update 
             pstmt.executeUpdate();
@@ -99,8 +99,12 @@ public class App{
     void run() {
         createDatabase();
         createNewTable();
-        insert("Raw Materials", 3000);
-        insert("Semifinished Goods", 4000);
-        insert("Finished Goods", 5000);
+        insert("Cannabis", 1);
+        insert("Heroin", 1);
+        insert("Lysergic Acid Diethylamide", 1);
+        insert("Peyote", 1);
+        insert("Methaqualone", 1);
+        insert("3,4-methylenedioxymethamphetamine", 1);
+        
     }
 }
