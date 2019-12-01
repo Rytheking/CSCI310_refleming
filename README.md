@@ -17,7 +17,7 @@
 | 1 - Kattis | 19-Sept-19 |  ☑   |  https://github.com/Rytheking/CSCI310_refleming/tree/master/Tri | Wrote Solution to [tri](https://open.kattis.com/problems/tri) |
 | 2 - Collections | 17-Oct-19 |  ☑   |  https://github.com/Rytheking/CSCI310_refleming/tree/master/map_proj | used a collection to make a basic contact book |
 | 3 - Threads | 24-Oct-19 |  ☑   |  https://github.com/Rytheking/CSCI310_refleming/tree/master/threading_proj | used threading to run two different for loops at once |
-| 4 - Database | 31-Oct-19 |  ☐  | https://github.com/Rytheking/CSCI310_refleming/tree/master/db_proj | Drug Schedule database|
+| 4 - Database | 31-Oct-19 |  ☑  | https://github.com/Rytheking/CSCI310_refleming/tree/master/db_proj | Drug Schedule database|
 | 5 - Android | 14-Nov-19 |  ☑ | https://github.com/Rytheking/CSCI310_refleming/tree/master/tip_calc  | made a tip calculator for android|
 
 ## References
