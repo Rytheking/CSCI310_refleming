@@ -21,4 +21,12 @@
         app:layout_constraintVertical_bias="0.956"
         app:srcCompat="@android:drawable/ic_menu_add" />
 
+    <ListView
+        android:layout_width="407dp"
+        android:layout_height="674dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
