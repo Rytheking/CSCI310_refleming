@@ -19,7 +19,7 @@
 | 3 - Threads | 24-Oct-19 |  ☑   |  https://github.com/Rytheking/CSCI310_refleming/tree/master/threading_proj | used threading to run two different for loops at once |
 | 4 - Database | 31-Oct-19 |  ☑  | https://github.com/Rytheking/CSCI310_refleming/tree/master/db_proj | Drug Schedule database|
 | 5 - Android | 14-Nov-19 |  ☑ | https://github.com/Rytheking/CSCI310_refleming/tree/master/tip_calc  | made a tip calculator for android|
-
+| 6 - Final | 9-Dec-19 |  ☑ | https://github.com/Rytheking/CSCI310_refleming/tree/master/final_2Due  | Basic todo list app, can add in tasks with titles and due dates and delete tasks|
 ## References
 
 1. [How to turn in assignments to Dr. MacEvoy on GitHub](https://docs.google.com/document/d/1tRbrd6zpvXDmZ009OPTY-vZMYXF_LTwlFL9yHxoo1g8/edit)
